@@ -11,6 +11,7 @@ import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 import com.zb.app.pandatv.R;
 import com.zb.app.pandatv.acts.BaseActivity;
 import com.zb.app.pandatv.acts.fragment.HomeFra;
+import com.zb.app.pandatv.utils.L;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -18,16 +19,16 @@ import butterknife.ButterKnife;
 public class MainActivity extends BaseActivity {
 
 
-    @BindView(R.id.main_bottom_navigation_bar) BottomNavigationBar naviBar;
     @BindView(R.id.main_frame) FrameLayout frameLayout;
-
+    @BindView(R.id.main_bottom_navigation_bar) BottomNavigationBar naviBar;
 
     private Fragment[] fragments = new Fragment[4];
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        naviBar = (BottomNavigationBar) findViewById(R.id.main_bottom_navigation_bar);
         setupNavigationBar();
         setNaviBarListener();
 
@@ -48,11 +49,10 @@ public class MainActivity extends BaseActivity {
         if(null == fragments[0]) {
             fragments[0] = HomeFra.newInstance(0);
         }
-        if(fragments[0].isAdded()) {
-            ft.replace(R.id.main_frame, fragments[0]);
-        } else {
+        if(!fragments[0].isAdded()) {
             ft.add(R.id.main_frame, fragments[0]);
         }
+        ft.show(fragments[0]);
         ft.commitAllowingStateLoss();
     }
 
@@ -78,20 +78,21 @@ public class MainActivity extends BaseActivity {
                             break;
                     }
                 }
-                if(fragments[position].isAdded()) {
-                    ft.replace(R.id.main_frame, fragments[position]);
-                } else {
+                if(!fragments[position].isAdded()) {
                     ft.add(R.id.main_frame, fragments[position]);
                 }
+                ft.show(fragments[position]);
                 ft.commitAllowingStateLoss();
+                L.e("show-" + position);
             }
 
             @Override
             public void onTabUnselected(int position) {
                 if(position < 4 && fragments[position] != null) {
                     FragmentTransaction ft =  getSupportFragmentManager().beginTransaction();
-                    ft.remove(fragments[position]);
+                    ft.hide(fragments[position]);
                     ft.commitAllowingStateLoss();
+                    L.e("hide-" + position);
                 }
             }
             @Override

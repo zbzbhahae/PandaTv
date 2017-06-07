@@ -6,8 +6,12 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.zb.app.pandatv.R;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 /**
  * Created by CIA on 2017/6/7.
@@ -15,13 +19,15 @@ import com.zb.app.pandatv.R;
 
 public class HomeFra extends BaseFragment {
 
+    @BindView(R.id.home_text) TextView textView;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View layout = inflater.inflate(R.layout.fragment_home, container, false);
+        ButterKnife.bind(this, layout);
 
-
-
+        textView.setText(Math.random() * 100 + "");
         return layout;
     }
 
