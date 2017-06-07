@@ -2,19 +2,16 @@ package com.zb.app.pandatv.acts;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.FrameLayout;
 
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 import com.zb.app.pandatv.R;
-import com.zb.app.pandatv.acts.BaseActivity;
-import com.zb.app.pandatv.acts.fragment.HomeFra;
+import com.zb.app.pandatv.acts.fragment.home.HomeFra;
 import com.zb.app.pandatv.utils.L;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 
 public class MainActivity extends BaseActivity {
 

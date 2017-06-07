@@ -1,4 +1,4 @@
-package com.zb.app.pandatv.acts.fragment;
+package com.zb.app.pandatv.acts.fragment.home;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.zb.app.pandatv.R;
+import com.zb.app.pandatv.acts.fragment.BaseFragment;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
