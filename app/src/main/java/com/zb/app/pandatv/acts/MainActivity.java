@@ -33,9 +33,9 @@ public class MainActivity extends BaseActivity {
 
 
     private void setupNavigationBar() {
-        naviBar.setMode(BottomNavigationBar.MODE_FIXED);
-        naviBar.setBackgroundStyle(BottomNavigationBar.BACKGROUND_STYLE_STATIC);
-        naviBar.addItem(new BottomNavigationItem(R.mipmap.ic_launcher, "Books"))
+        naviBar.setMode(BottomNavigationBar.MODE_SHIFTING);
+        naviBar.setBackgroundStyle(BottomNavigationBar.BACKGROUND_STYLE_RIPPLE);
+        naviBar.addItem(new BottomNavigationItem(R.drawable.selector_tab_home, "Books"))
                 .addItem(new BottomNavigationItem(R.mipmap.ic_launcher, "Books"))
                 .addItem(new BottomNavigationItem(R.mipmap.ic_launcher, "Books"))
                 .addItem(new BottomNavigationItem(R.mipmap.ic_launcher, "Books"))
