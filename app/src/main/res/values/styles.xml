@@ -12,4 +12,13 @@
         <item name="windowActionBar">false</item>
     </style>
 
+
+
+    <declare-styleable name="BottomNavigationItem">
+        <attr name="item_drawable" format="reference"/>
+        <attr name="item_text" format="string"/>
+        <attr name="item_text_color" format="color"/>
+        <attr name="item_text_checked_color" format="color"/>
+        <attr name="item_text_size" format="dimension"/>
+    </declare-styleable>
 </resources>
