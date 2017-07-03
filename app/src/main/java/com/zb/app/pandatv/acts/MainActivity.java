@@ -9,9 +9,15 @@ import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 import com.zb.app.pandatv.R;
 import com.zb.app.pandatv.acts.fragment.home.HomeFra;
+import com.zb.app.pandatv.net.Api;
+import com.zb.app.pandatv.net.Api.PandaApi;
+import com.zb.app.pandatv.net.RetrofitUtils;
 import com.zb.app.pandatv.utils.L;
 
 import butterknife.BindView;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class MainActivity extends BaseActivity {
 
@@ -28,6 +34,8 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
         setupNavigationBar();
         setNaviBarListener();
+
+
 
     }
 
