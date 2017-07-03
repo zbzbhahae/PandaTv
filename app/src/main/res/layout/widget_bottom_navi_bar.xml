@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zb="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+
+    <com.zb.app.pandatv.widgets.bottomnavibar.BottomNavigationItem
+        android:id="@+id/navi_bar_item_home"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        zb:item_drawable="@drawable/selector_tab_home"
+        zb:item_text="首页"
+        zb:item_text_color="@color/colorAccent"
+        zb:item_text_checked_color="@color/colorPrimary"
+        zb:item_text_size="15sp"
+        />
+
+    <com.zb.app.pandatv.widgets.bottomnavibar.BottomNavigationItem
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        zb:item_drawable="@drawable/selector_tab_home"
+        zb:item_text="首页"
+        zb:item_text_color="@color/colorAccent"
+        zb:item_text_checked_color="@color/colorPrimary"
+        zb:item_text_size="15sp"
+        />
+
+    <com.zb.app.pandatv.widgets.bottomnavibar.BottomNavigationItem
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        zb:item_drawable="@drawable/selector_tab_home"
+        zb:item_text="首页"
+        zb:item_text_color="@color/colorAccent"
+        zb:item_text_checked_color="@color/colorPrimary"
+        zb:item_text_size="15sp"
+        />
+
+    <com.zb.app.pandatv.widgets.bottomnavibar.BottomNavigationItem
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        zb:item_drawable="@drawable/selector_tab_home"
+        zb:item_text="首页"
+        zb:item_text_color="@color/colorAccent"
+        zb:item_text_checked_color="@color/colorPrimary"
+        zb:item_text_size="15sp"
+        />
+
+</LinearLayout>

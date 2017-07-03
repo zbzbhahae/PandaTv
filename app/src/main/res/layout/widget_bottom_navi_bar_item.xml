@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioButton
+        android:id="@+id/bottom_navi_bar_item_image"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:button="@null"
+        android:layout_gravity="center_horizontal"
+        android:clickable="false"/>
+
+    <TextView
+        android:id="@+id/bottom_navi_bar_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Home"
+        android:textSize="10sp"/>
+
+</LinearLayout>

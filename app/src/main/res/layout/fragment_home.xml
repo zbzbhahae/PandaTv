@@ -6,8 +6,14 @@
     <TextView
         android:id="@+id/home_text"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:text="fdasfdsafda"
         android:textSize="33sp"/>
+
+    <com.zb.app.pandatv.widgets.bottomnavibar.BottomNavigationTab
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        />
 
 </LinearLayout>
